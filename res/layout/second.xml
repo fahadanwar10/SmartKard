@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            
+            android:src="@drawable/update" />
+
+    <ImageButton
+        android:id="@+id/int1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/task"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:src="@drawable/internal" />
+
+    <ImageButton
+            android:id="@+id/task"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+             android:layout_below="@+id/refresh"
+             android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            
+            android:src="@drawable/pencil" />
+    
+    <ImageButton
+        android:id="@+id/att"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/int1"
+        android:background="@null"
+        android:src="@drawable/att" />
+
+    <ImageButton
+        android:id="@+id/all"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@null"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/att"
+        android:src="@drawable/mix" />
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>
